@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" type = "text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src = "scripts/main.js"></script>
+    <title>Wonbeen Kim's Blog</title>
+  </head>
+  <body>
+    <div class = "top">
+      <button class = "btn-sign-up">Sign Up</button>
+      <a href = "CreateAccount.html" target = "_blank">Create an Account</a>
+      <section class = "audio">
+        <h2><strong>Status Music</strong></h2>
+        <audio id = "status-music" controls>
+          <source src = "audio/I-hope-to-be-around.mp3">
+        </audio>
+      </section>
+    </div>
+    <div>
+      <br>
+      <nav>
+        <a href="#"><strong>Home</strong></a>
+        <a href="Biography.html"><strong>Biography</strong></a>
+        <a href="Favorites.html"><strong>Favorites</strong></a>
+        <a href="Hobbies.html"><strong>Hobbies</strong></a>
+        <a href="Posts.html"><strong>Posts</strong></a>
+        <a href="Artworks.html"><strong>Artworks</strong></a>
+        <a href="Contacts.html"><strong>Contact</strong></a>
+      </nav>
+      <!--Login & Create An Account-->
+        <form action = "Index.html" method = "POST">
+          <h2>Login</h2>
+          <label for = "user-id">ID: </label>
+          <input type = "text" id = "user-id" name ="user-id">
+          <label for = "user-password">Password: </label>
+          <input type = "password" id="user-password" name="user-password">
+          <input type = "submit" value = "POST">
+        </form>
+      <!--volume control-->
+      <form class = "volume-ctrl">
+        <label for = "volume">Volume Control</label>
+        <span>Mute</span>
+        <input id = "volume" name = "volume" type = "range" min = "0" max = "100" step = "1">
+        <span>Max</span>
+      </form>
+      <h1 id = "Title"><strong>Wonbeen Kim's Blog</strong></h1>
+      <img src = "images/Profile.jpg" alt = "Profile" class = "center">
+      <hr>
+      <!--Schedule-->
+      <h2>Class Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope = "col">Time</th>
+            <th scope = "col">Monday</th>
+            <th scope = "col">Tuesday</th>
+            <th scope = "col">Wednesday</th>
+            <th scope = "col">Thursday</th>
+            <th scope = "col">Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:30 ~ 9:20</td>
+            <td>Adv. Math</td>
+            <td>Adv. Econ</td>
+            <td>Adv. Econ</td>
+            <td>Adv. Econ</td>
+            <td>Adv. Econ</td>
+          </tr>
+          <tr>
+            <td>9:25 ~ 10:15</td>
+            <td>Adv. Math</td>
+            <td>Adv. Econ</td>
+            <td>Adv. Math</td>
+            <td>Adv. Math</td>
+            <td>Adv. Math</td>
+          </tr>
+          <tr>
+            <td>10:40 ~ 12:10</td>
+            <td>C</td>
+            <td>Adv. Spanish</td>
+            <td>Adv. CS</td>
+            <td>CW</td>
+            <td>Anatomy</td>
+          </tr>
+          <tr>
+            <td>12:55 ~ 1:45</td>
+            <td>Anatomy</td>
+            <td>C</td>
+            <td>Adv. Spanish</td>
+            <td>Adv. CS</td>
+            <td>CW</td>
+          </tr>
+          <tr>
+            <td>1:50 ~ 2:40</td>
+            <td>CW</td>
+            <td>Anatomy</td>
+            <td>C</td>
+            <td>Adv. Spanish</td>
+            <td>Adv. CS</td>
+          </tr>
+          <tr>
+              <td>2:45 ~ 3:35</td>
+              <td>Junior DRP</td>
+              <td>Senior DRP</td>
+              <td>Mentor Meeting</td>
+              <td>Senior DRP</td>
+              <td>Assembly</td>
+          </tr>
+          <tr>
+              <td>3:40 ~ 4:30</td>
+              <td>Adv. CS</td>
+              <td>CW</td>
+              <td>Anatomy</td>
+              <td>C</td>
+              <td>Adv. Spanish</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+
+      <hr>
+      <!--New Post-->
+      <form action = "Posts.html" method = "POST">
+        <h2>Upload a New Post on the Timeline & Ask Questions</h2>
+        <section class = "new-post">
+          <label>What date is it?</label>
+          <br>
+          <label for = "month">month</label>
+          <select name = "month" id ="month">
+            <option value = "Jan">Jan</option>
+            <option value = "Feb">Feb</option>
+            <option value = "Mar">Mar</option>
+            <option value = "Apr">Apr</option>
+            <option value = "May">May</option>
+            <option value = "Jun">Jun</option>
+            <option value = "Jul">Jul</option>
+            <option value = "Aug">Aug</option>
+            <option value = "Sep">Sep</option>
+            <option value = "Oct">Oct</option>
+            <option value = "Nov">Nov</option>
+            <option value = "Dec">Dec</option>
+          </select>
+          <label id = "day">day</label>
+          <input type = "text" name = "day">
+          <br>
+          <label id = "place">Where are you now?</label>
+          <input type = "text" name ="place">
+
+          <section class = "mood">
+          <label id = "mood">How is your mood today?</label>
+            <br>
+            <span>Terrible</span>
+            <input type = "range" name = "mood" min ="0" max = "100" step = "0.5">
+            <span>Amazing</span>
+          </section>
+          <br>
+          <label for = "post">Write Below</label>
+          <br>
+          <textarea id = "post" name = "post" rows = "15" cols = "30"></textarea>
+        </section>
+        <input type = "submit" value = "POST">
+      </form>
+      <hr>
+      <form>
+        <h2>To-Dos & HW Check List</h2>
+        <label for = "Adv-CS">Adv. Computer Science</label>
+        <input id="Adv-CS" name="subject" type="checkbox">
+        <br>
+        <label for = "Adv-Mathematics">Adv. Mathematics</label>
+        <input id="Adv-Mathematics" name="subject" type="checkbox">
+        <br>
+        <label for = "Adv-Economics">Adv. Economics</label>
+        <input id="Adv-Economics" name="subject" type="checkbox">
+        <br>
+        <label for = "Adv-Spanish">Adv. Spanish</label>
+        <input id="Adv-Spanish" name="subject" type="checkbox">
+        <br>
+        <label for = "Ana-Phy">Anatomy and Physiology</label>
+        <input id="Ana-Phy" name="subject" type="checkbox">
+        <br>
+        <label for = "Creative-Writing">Creative Writing</label>
+        <input id="Creative-Writing" name="subject" type="checkbox">
+        <br>
+        <label for = "DRP">DRP</label>
+        <input id="DRP" name="subject" type="checkbox">
+      </form>
+      <hr>
+      <form action = "Artworks.html" method = "POST">
+        <h2>Requests!</h2>
+        <label id = "pen">Pen Drawing</label>
+        <input type="radio" name="requests" value="pen">
+        <label id = "pen+water">Pen + Watercolor Drawing</label>
+        <input type="radio" name="requests" value="pen+water">
+        <label id = "gesdraw">Gesture Drawing</label>
+        <input type="radio" name="requests" value="gesdraw">
+        <label id = "acryl">Acrylic Painting</label>
+        <input type="radio" name="requests" value="acryl">
+        <br>
+        <input type = "submit" value = "POST">
+      </form>
+      <hr>
+      <footer>&copy; Copyright 2019 WonbeenKim's Blog
+      </footer>
+    </div>
+  </body>
+</html>
