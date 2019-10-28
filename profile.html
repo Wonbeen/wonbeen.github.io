@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skidders-services-profile</title>
+    <link href = "style.css" type = "text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <div class = "row">
+          <div class = "logo">
+            <a href ="index.html"><img src = "images/logo.png"></a>
+          </div>
+          <div = "main-nav">
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "index.html"> HOME </a></li>
+              </ul>
+            </div>
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "about.html"> ABOUT </a></li>
+              </ul>
+              <ul class = "sub-nav-contents">
+                <li><a href = "brand.html"> BRAND </a></li>
+                <li><a href = "history.html"> HISTORY </a></li>
+              </ul>
+            </div>
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "services.html"> SERVICES </a></li>
+              </ul>
+              <ul class = "sub-nav-contents">
+                <li class = "active"><a href = "profile.html"> PROFILE </a></li>
+                <li><a href = "shops.html"> SHOPS </a></li>
+                <li><a href = "skateparks.html"> SKATEPARKS </a></li>
+              </ul>
+            </div>
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "news.html"> NEWS </a></li>
+              </ul>
+              <ul class = "sub-nav-contents">
+                <li><a href = "standings.html"> STANDINGS </a></li>
+                <li><a href = "recent.html"> RECENT </a></li>
+              </ul>
+            </div>
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "events.html"> EVENTS </a></li>
+              </ul>
+            </div>
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "contact.html"> CONTACT </a></li>
+              </ul>
+            </div>
+            <div class = "sub-nav">
+              <ul>
+                <li><a href = "faq.html"> FAQ </a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <!--Page Title-->
+          <div class = "titlephrase">
+            <h1>Skidders Network</h1>
+            <p></p>
+          </div>
+        </div>
+        <!-- Sign Up & Sign In Division -->
+        <div class = "sign-in-up">
+          <div id = "profile">
+            <h1>My Profile</h1>
+            <h2 id = "username">Username: <h2/>
+            <h2 id = "experience">Experience: <h2/>
+            <h2 id = "country">Country: <h2/>
+          </div>
+          <!-- Sign In Section-->
+          <div id = "sign-in">
+            <h1>Sign In</h1>
+            <form class = "sign-in" action = "profile.html" method ="GET">
+              <label for = "user-name">username: </label>
+              <input id = "user-name" type= "text" name = "user-name" required>
+              <br>
+              <label for = "password">password: </label>
+              <input id = "pw" name = "pw" type = "text" min = "6" required>
+              <br>
+              <input class = "btn" type = "submit" value = "Sign In">
+            </form>
+          </div>
+
+          <!--Sign Up Setion-->
+          <div id = "sign-up">
+            <h1>Sign Up</h1>
+            <!--Add your form below:-->
+            <form class = "sign-up" action = "profile.html" method ="GET">
+              <label for = "user-name">username: </label>
+              <input id = "user-name" type= "text" name = "user-name" required>
+              <br>
+              <label for = "password">password: </label>
+              <input id = "pw" name = "pw" type = "text" min = "6" required>
+              <br>
+              <label for = "country">Country: </label>
+              <input id = "country" type= "text" name = "country" list = "for-country" required>
+              <datalist id = "for-country">
+                <option value = "Argentina"></option>
+                <option value = "Austrailia"></option>
+                <option value = "Brazil"></option>
+                <option value = "Canada"></option>
+                <option value = "China"></option>
+                <option value = "Japan"></option>
+                <option value = "New Zealand"></option>
+                <option value = "Singapore"></option>
+                <option value = "South Korea"></option>
+                <option value = "Spain"></option>
+                <option value = "Taiwan"></option>
+                <option value = "United Kingdom"></option>
+                <option value = "USA"></option>
+              </datalist>
+              <br>
+              <input class = "btn" type = "submit" value = "Sign Up" id = "signupbtn">
+            </form>
+          </div>
+        </div>
+        <!-- End of Sign Up & Sign In Division -->
+        <!-- Your Interests Division-->
+        <div class = "experience">
+          <form class = "experience" action = "profile.html" method ="GET">
+            <h1>Experience</h1>
+            <input id = "beginner" type = "radio"  name = "answer" value = "beginner" required>
+            <label for = "beginner">Beginner</label>
+            <input id = "intermediate" type = "radio"  name = "answer" value = "intermediate" required>
+            <label for = "intermediate">Intermediate</label>
+            <input id = "pro" type = "radio"  name = "answer" value = "pro" required>
+            <label for = "pro">Professional</label>
+            <br>
+            <h1>Status Message</h1>
+            <label for = "status-message">Status Message: </label>
+            <textarea id = "status-message" name = "status-message" rows ="2" cols= "40" minlength = "3" required>
+            </textarea>
+            <br>
+            <input class = "btn" type = "submit" value = "Submit">
+          </form>
+        </div>
+
+        <div class = "your-interests">
+          <h1>Your Interests</h1>
+          <div class = "interests" id = "skateboarding-styles">
+            <h2>Skateboarding Style</h2>
+            <form class = "interests" action = "profile.html" method ="GET">
+              <input type="checkbox" name="riding-style" value="freestyle">Freestyle<br>
+              <input type="checkbox" name="riding-style" value="vert">Vert Riding<br>
+              <input type="checkbox" name="riding-style" value="street">Street skateboarding<br>
+              <input type="checkbox" name="riding-style" value="park">Park skateboarding<br>
+              <input type="checkbox" name="riding-style" value="cruising">Cruising<br>
+              <input type="checkbox" name="riding-style" value="downhill">Downhill skateboarding<br>
+              <input class = "btn" type = "submit" value = "Submit">
+            </form>
+          </div>
+          <div class = "interests" id = "location-preference">
+            <h2>Location Preference</h2>
+            <form class = "interests" action = "profile.html" method ="GET">
+              <input type="checkbox" name="location-preference" value="city">City<br>
+              <input type="checkbox" name="location-preference" value="suburban">Suburban<br>
+              <input type="checkbox" name="location-preference" value= "skatepark">Skatepark<br>
+              <input type="checkbox" name="location-preference" value="mountain-road">Mountain road<br>
+              <input class = "btn" type = "submit" value = "Submit">
+            </form>
+          </div>
+          <div class = "interests" id = "persona">
+            <h2>Persona</h2>
+            <form class = "interests" action = "profile.html" method ="GET">
+              <input type="checkbox" name="persona" value="indie">Indie<br>
+              <input type="checkbox" name="persona" value="youtuber-streamer">YouTuber / Streamer<br>
+              <input type="checkbox" name="persona" value="crew">Crew<br>
+              <input type="checkbox" name="persona" value="team">Team<br>
+              <input type="checkbox" name="persona" value="sponsor">Sponsor<br>
+              <input class = "btn" type = "submit" value = "Submit">
+            </form>
+          </div>
+        </div>
+    </header>
+    <script src="scripts/signup.js"></script>
+  </body>
+</html>
