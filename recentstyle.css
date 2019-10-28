@@ -2,3 +2,349 @@
 max-width: 40%;
   height: auto;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Sedgwick Ave Display';
+  height: 500vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+p{
+  color: white;
+  font-size: 25px;
+}
+p.label{
+  color: black;
+  font-size: 25px;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+ul{
+  text-align: center;
+}
+li{
+  list-style-type: none;
+}
+
+li a{
+  color: white;
+}
+
+
+div{
+  color: white;
+}
+
+div.stores#offline-stores{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://live.staticflickr.com/666/19921702853_e908fcde08_b.jpg");
+  height: 1500px;
+  background-size: cover;
+  background-position: center;
+}
+
+div.stores h2{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+div.your-interests{
+  border: 1px solid white;
+}
+
+.row{
+  max-width: 1580px;
+  margin: auto;
+}
+
+.titlephrase h1{
+  font-family: 'Sedgwick Ave Display';
+  font-size: 100px;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 275px;
+  transition-duration: 0.3s;
+}
+
+.titlephrase h1:hover{
+  font-size: 105px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.titlephrase h2{
+  font-family: 'Sedgwick Ave Display';
+  font-size: 50px;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.titlephrase h2:hover{
+  font-size: 55px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+div.titlephrase{
+  margin-left: 205px;
+  margin-right: 205px
+}
+
+.button{
+  text-align: center;
+}
+
+.btn{
+  border: 1px solid white;
+  padding : 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.btn-one{
+  background-color: inherit;
+  font-family: "Sedgwick Ave Display";
+}
+
+.btn-one:hover{
+  background-color: white;
+  color: inherit;
+}
+.btn-two{
+  background-color: inherit;
+  font-family: "Sedgwick Ave Display";
+}
+
+.btn-two:hover{
+  background-color: white;
+  color: inherit;
+}
+
+.main-nav{
+  overflow: hidden;
+}
+
+.sub-nav{
+  float: left;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.sub-nav li{
+  display: inline-block;
+}
+
+.sub-nav li a{
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 15px;
+}
+
+.sub-nav li.active a{
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.sub-nav li a:hover{
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+
+.sub-nav-contents{
+  float: center;
+  color: white;
+}
+
+.sub-nav-contents li {
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo img{
+  width: 50px;
+  height: auto;
+  float: left;
+  margin: 15px;
+  transition-duration: 0.3s;
+}
+
+.logo img:hover{
+  width: 55px;
+  transition-duration: 0.3s;
+}
+
+section.shops{
+  background-color: white;
+  border-radius: 7px;
+  width: 230px;
+  height: 350px;
+  margin: 5px;
+  text-align: center;
+  color: black;
+  float: left;
+}
+
+ul.sub-nav-contents{
+  display: none;
+}
+
+.sub-nav:hover ul.sub-nav-contents{
+  display: block;
+}
+
+div.magazines{
+  list-style: none;
+  display: inline;
+}
+
+div.magazines section{
+    margin: 20px;
+}
+
+/* changed by Wonbeen on October 12. */
+div.sign-in-up, div.experience, div.your-interests{
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 10px solid white;
+}
+div.sign-in{
+  float: left;
+}
+div.sign-up{
+  float: left;
+}
+#profile{
+  text-align: center;
+}
+#sign-up{
+  text-align: center;
+  color: white;
+}
+
+#sign-up input.btn{
+  font-family: "Sedgwick Ave Display";
+  margin-bottom: 5px;
+  background: inherit;
+}
+
+#sign-up input.btn:hover{
+  background-color: white;
+  color: black;
+}
+
+#sign-in{
+  text-align: center;
+  color: white;
+}
+
+input.btn{
+  font-family: "Sedgwick Ave Display";
+  margin-top: 5px;
+  background: inherit;
+}
+input.btn:hover{
+  background-color: white;
+  color: black
+}
+
+/* change was made by Wonbeen* on September 5*/
+div.your-interests{
+  text-align: center;
+  border: 10px solid white;
+  height: relative;
+  margin-top, margin-bottom: 10px;
+}
+
+div.your-interests div{
+  text-align: center;
+  height: relative;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid white;
+  float: center;
+}
+
+#status-message{
+  font-family: "Sedgwick Ave Display";
+  background: white;
+}
+
+img.moving-gif-1{
+  width: 50px;
+  height: auto;
+}
+
+img.moving-gif-2{
+  width: 80px;
+  height: auto;
+}
+
+
+th
+{
+  border: 5px
+  solid #8c6b48;
+  text-align: center;
+  margin: 20px auto;
+}
+
+td
+{
+  border: 5px
+  solid #8c6b48;
+  width: 350px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+input#user-name, input#pw, input#country{
+  width: 70%;
+}
+
+textarea{
+  width: 70%;
+}
+
+div.experience{
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 10px solid white;
+}
