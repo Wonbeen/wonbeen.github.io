@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Sedgwick Ave Display';
+  height: 500vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-width: 300px;
+  min-height: 600px;
+
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.row{
+  max-width: 1580px;
+  margin: auto;
+}
+
+.titlephrase h1{
+  font-family: 'Sedgwick Ave Display';
+  font-size: 100px;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 275px;
+  transition-duration: 0.3s;
+}
+
+.titlephrase h1:hover{
+  font-size: 105px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.titlephrase h2{
+  font-family: 'Sedgwick Ave Display';
+  font-size: 50px;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.titlephrase h2:hover{
+  font-size: 55px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+div.titlephrase{
+  margin-left: relative;
+  margin-right: relative;
+}
+
+.button{
+  text-align: center;
+}
+
+.btn{
+  border: 1px solid white;
+  padding : 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.btn-one{
+  background-color: inherit;
+  font-family: "Sedgwick Ave Display";
+}
+
+.btn-one:hover{
+  background-color: white;
+  color: inherit;
+}
+
+.btn-two{
+  background-color: inherit;
+  font-family: "Sedgwick Ave Display";
+}
+
+.btn-two:hover{
+  background-color: white;
+  color: inherit;
+}
+
+.main-nav{
+  overflow: hidden;
+}
+
+.sub-nav{
+  float: left;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.sub-nav li{
+  display: inline-block;
+}
+
+.sub-nav li a{
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 15px;
+}
+
+.sub-nav li.active a{
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.sub-nav li a:hover{
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+
+.sub-nav-contents{
+  float: center;
+  color: white;
+}
+
+.sub-nav-contents li {
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo img{
+  width: 50px;
+  height: auto;
+  float: left;
+  margin: 15px;
+  transition-duration: 0.3s;
+}
+
+.logo img:hover{
+  width: 55px;
+  transition-duration: 0.3s;
+}
+
+ul.sub-nav-contents{
+  display: none;
+}
+
+.sub-nav:hover ul.sub-nav-contents{
+  display: block;
+}
