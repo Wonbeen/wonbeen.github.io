@@ -348,7 +348,7 @@ div.experience{
   border: 10px solid white;
 }
 
-.news_img{
-max-width: 40%;
+img.news_img{
+  width: 20%;
   height: auto;
 }
