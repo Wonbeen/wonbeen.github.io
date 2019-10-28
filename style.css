@@ -347,3 +347,8 @@ div.experience{
   text-align: center;
   border: 10px solid white;
 }
+
+#news_img{
+max-width: 40%;
+  height: auto;
+}
