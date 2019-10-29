@@ -1,28 +1,28 @@
+div.titlephrase#contact-sponsorships{
+  text-align: center;
+}
+
 body{
   margin: 0;
   padding: 0;
   font-family: 'Righteous';
   height: 500px;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.liveabout.com/thmb/qAGheg3kzwa1cARGAc_lgZKvIeQ=/1280x854/filters:fill(auto,1)/andy_mcdonald_stakeboard_103171857-56a8784c5f9b58b7d0f2b58d.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-width: 600px;
+  min-width: 300px;
   min-height: 600px;
 
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://www.liveabout.com/thmb/qAGheg3kzwa1cARGAc_lgZKvIeQ=/1280x854/filters:fill(auto,1)/andy_mcdonald_stakeboard_103171857-56a8784c5f9b58b7d0f2b58d.jpg");
   height: 100px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
-
-div.row{
-  max
 }
 
 p{
@@ -58,6 +58,13 @@ img{
 
 div{
   color: white;
+}
+
+div.stores#offline-stores{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://live.staticflickr.com/666/19921702853_e908fcde08_b.jpg");
+  height: 1500px;
+  background-size: cover;
+  background-position: center;
 }
 
 div.stores h2{
@@ -108,15 +115,8 @@ div.your-interests{
 }
 
 div.titlephrase{
-  margin: 0px 25px;
-}
-
-div.services{
-  border: 5px solid white;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 25%;
+  margin-left: relative;
+  margin-right: relative;
 }
 
 .button{
@@ -257,9 +257,11 @@ div.sign-in{
 div.sign-up{
   float: left;
 }
+
 #profile{
   text-align: center;
 }
+
 #sign-up{
   text-align: center;
   color: white;
@@ -288,7 +290,7 @@ input.btn{
 }
 input.btn:hover{
   background-color: white;
-  color: black;
+  color: black
 }
 
 /* change was made by Wonbeen* on September 5*/
@@ -326,14 +328,16 @@ img.moving-gif-2{
 
 th
 {
-  border: 5px solid white;
+  border: 5px
+  solid #8c6b48;
   text-align: center;
   margin: 20px auto;
 }
 
 td
 {
-  border: 5px solid white;
+  border: 5px
+  solid #8c6b48;
   width: 350px;
   text-align: center;
   margin: 20px auto;
@@ -353,4 +357,21 @@ div.experience{
   margin-bottom: 10px;
   text-align: center;
   border: 10px solid white;
+}
+
+div.sr{
+  border: 5px solid white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+section{
+  border: 5px;
+  margin: 0px 15px;
+  float: center;
+  display: inline-block;
+}
+
+span{
+  font-size: 25px;
 }

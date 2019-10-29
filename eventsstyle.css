@@ -3,17 +3,17 @@ body{
   padding: 0;
   font-family: 'Righteous';
   height: 500px;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-width: 600px;
+  min-width: 300px;
   min-height: 600px;
 
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
   height: 100px;
   background-size: cover;
   background-position: center;
@@ -21,24 +21,30 @@ header {
   background-repeat: no-repeat;
 }
 
-div.row{
-  max
+div.event div{
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 0px 50px;
 }
 
 p{
   color: white;
   font-size: 25px;
 }
+
 p.label{
   color: black;
   font-size: 25px;
 }
+
 a:link{
   text-decoration: none;
 }
+
 a:visited{
   text-decoration: none;
 }
+
 ul{
   text-align: center;
 }
@@ -108,15 +114,8 @@ div.your-interests{
 }
 
 div.titlephrase{
-  margin: 0px 25px;
-}
-
-div.services{
-  border: 5px solid white;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 25%;
+  margin-left: relative;
+  margin-right: relative;
 }
 
 .button{
@@ -323,20 +322,24 @@ img.moving-gif-2{
   height: auto;
 }
 
+table {
+  margin: 0px 20px;
+}
 
 th
 {
-  border: 5px solid white;
+  color: white;
+  font-size: 25px;
+  border-bottom: 5px solid white;
   text-align: center;
-  margin: 20px auto;
 }
 
 td
 {
-  border: 5px solid white;
+  color: white;
+  border-bottom: 1px solid white;
   width: 350px;
   text-align: center;
-  margin: 20px auto;
 }
 
 input#user-name, input#pw, input#country{

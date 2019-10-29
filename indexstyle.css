@@ -1,21 +1,52 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Sedgwick Ave Display';
+  font-family: 'Righteous', cursive;
   height: 500px;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
-  height: 1500px;
+  height: 800px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
 }
 
 .row{
@@ -24,7 +55,7 @@ header {
 }
 
 .titlephrase h1{
-  font-family: 'Sedgwick Ave Display';
+  font-family: 'Righteous', cursive;
   font-size: 100px;
   color: white;
   opacity: 0.5;
@@ -40,7 +71,7 @@ header {
 }
 
 .titlephrase h2{
-  font-family: 'Sedgwick Ave Display';
+  font-family: 'Righteous', cursive;
   font-size: 50px;
   opacity: 0.5;
   color: white;
@@ -75,7 +106,7 @@ div.titlephrase{
 
 .btn-one{
   background-color: inherit;
-  font-family: "Sedgwick Ave Display";
+  font-family: 'Righteous', cursive;
 }
 
 .btn-one:hover{
@@ -85,7 +116,7 @@ div.titlephrase{
 
 .btn-two{
   background-color: inherit;
-  font-family: "Sedgwick Ave Display";
+  font-family: 'Righteous', cursive;
 }
 
 .btn-two:hover{
@@ -113,7 +144,7 @@ div.titlephrase{
   padding: 5px;
   border: 1px solid white;
   border-radius: 3px;
-  font-family: "Sedgwick Ave Display", cursive;
+  font-family: 'Righteous', cursive, cursive;
   font-size: 15px;
 }
 

@@ -7,22 +7,32 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-width: 600px;
+  min-width: 300px;
   min-height: 600px;
 
 }
 
 header {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
-  height: 100px;
+  min-height: 100px;
+  height: auto;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
-div.row{
-  max
+div.main{
+  background-color: inherit;
+  border: 5px solid white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+}
+
+div.main span{
+  font-size: 100px;
+  color: inherit;
 }
 
 p{
@@ -35,9 +45,11 @@ p.label{
 }
 a:link{
   text-decoration: none;
+  color: white;
 }
 a:visited{
   text-decoration: none;
+  color: white;
 }
 ul{
   text-align: center;
@@ -58,17 +70,6 @@ img{
 
 div{
   color: white;
-}
-
-div.stores h2{
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
-}
-
-div.your-interests{
-  border: 1px solid white;
 }
 
 .row{
@@ -108,15 +109,8 @@ div.your-interests{
 }
 
 div.titlephrase{
-  margin: 0px 25px;
-}
-
-div.services{
-  border: 5px solid white;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 25%;
+  margin-left: relative;
+  margin-right: relative;
 }
 
 .button{
@@ -217,140 +211,10 @@ div.services{
   transition-duration: 0.3s;
 }
 
-section.shops{
-  background-color: white;
-  border-radius: 7px;
-  width: 230px;
-  height: 350px;
-  margin: 5px;
-  text-align: center;
-  color: black;
-  float: left;
-}
-
 ul.sub-nav-contents{
   display: none;
 }
 
 .sub-nav:hover ul.sub-nav-contents{
   display: block;
-}
-
-div.magazines{
-  list-style: none;
-  display: inline;
-}
-
-div.magazines section{
-    margin: 20px;
-}
-
-/* changed by Wonbeen on October 12. */
-div.sign-in-up, div.experience, div.your-interests{
-  margin-left: 150px;
-  margin-right: 150px;
-  border: 10px solid white;
-}
-div.sign-in{
-  float: left;
-}
-div.sign-up{
-  float: left;
-}
-#profile{
-  text-align: center;
-}
-#sign-up{
-  text-align: center;
-  color: white;
-}
-
-#sign-up input.btn{
-  font-family: "Righteous";
-  margin-bottom: 5px;
-  background: inherit;
-}
-
-#sign-up input.btn:hover{
-  background-color: white;
-  color: black;
-}
-
-#sign-in{
-  text-align: center;
-  color: white;
-}
-
-input.btn{
-  font-family: "Righteous";
-  margin-top: 5px;
-  background: inherit;
-}
-input.btn:hover{
-  background-color: white;
-  color: black;
-}
-
-/* change was made by Wonbeen* on September 5*/
-div.your-interests{
-  text-align: center;
-  border: 10px solid white;
-  height: relative;
-  margin-top, margin-bottom: 10px;
-}
-
-div.your-interests div{
-  text-align: center;
-  height: relative;
-  margin: 15px;
-  padding: 15px;
-  border: 1px solid white;
-  float: center;
-}
-
-#status-message{
-  font-family: "Righteous";
-  background: white;
-}
-
-img.moving-gif-1{
-  width: 50px;
-  height: auto;
-}
-
-img.moving-gif-2{
-  width: 80px;
-  height: auto;
-}
-
-
-th
-{
-  border: 5px solid white;
-  text-align: center;
-  margin: 20px auto;
-}
-
-td
-{
-  border: 5px solid white;
-  width: 350px;
-  text-align: center;
-  margin: 20px auto;
-}
-
-input#user-name, input#pw, input#country{
-  width: 70%;
-}
-
-textarea{
-  width: 70%;
-}
-
-div.experience{
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  border: 10px solid white;
 }

@@ -3,17 +3,16 @@ body{
   padding: 0;
   font-family: 'Righteous';
   height: 500px;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.pixabay.com/photo/2016/09/24/18/32/skate-1692290_960_720.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-width: 600px;
-  min-height: 600px;
+  min-width: 300px;
 
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/background.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://cdn.pixabay.com/photo/2016/09/24/18/32/skate-1692290_960_720.jpg");
   height: 100px;
   background-size: cover;
   background-position: center;
@@ -28,6 +27,7 @@ div.row{
 p{
   color: white;
   font-size: 25px;
+  text-align: center;
 }
 p.label{
   color: black;
@@ -108,15 +108,8 @@ div.your-interests{
 }
 
 div.titlephrase{
-  margin: 0px 25px;
-}
-
-div.services{
-  border: 5px solid white;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 25%;
+  margin-left: relative;
+  margin-right: relative;
 }
 
 .button{
@@ -238,11 +231,15 @@ ul.sub-nav-contents{
 
 div.magazines{
   list-style: none;
-  display: inline;
+  text-align: center;
 }
 
 div.magazines section{
+    background-color: inherit;
     margin: 20px;
+    border: 10px solid black;
+    border-radius: 15px;
+    display: inline-grid;
 }
 
 /* changed by Wonbeen on October 12. */
@@ -323,22 +320,6 @@ img.moving-gif-2{
   height: auto;
 }
 
-
-th
-{
-  border: 5px solid white;
-  text-align: center;
-  margin: 20px auto;
-}
-
-td
-{
-  border: 5px solid white;
-  width: 350px;
-  text-align: center;
-  margin: 20px auto;
-}
-
 input#user-name, input#pw, input#country{
   width: 70%;
 }
@@ -353,4 +334,40 @@ div.experience{
   margin-bottom: 10px;
   text-align: center;
   border: 10px solid white;
+}
+
+img.news_img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+div.recent a{
+  color: white;
+  font-size: 25px;
+}
+
+div.recent{
+  border: 5px solid white;
+  padding: 15px;
+}
+
+table {
+  margin: 0px 20px;
+  text-align: center;
+}
+
+th
+{
+  color: white;
+  font-size: 25px;
+  border-bottom: 5px solid white;
+  text-align: center;
+}
+
+td
+{
+  color: white;
+  border-bottom: 1px solid white;
+  width: 350px;
+  text-align: center;
 }

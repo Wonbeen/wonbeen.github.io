@@ -7,7 +7,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-width: 600px;
+  min-width: 300px;
   min-height: 600px;
 
 }
@@ -108,15 +108,8 @@ div.your-interests{
 }
 
 div.titlephrase{
-  margin: 0px 25px;
-}
-
-div.services{
-  border: 5px solid white;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 25%;
+  margin-left: relative;
+  margin-right: relative;
 }
 
 .button{
@@ -323,20 +316,25 @@ img.moving-gif-2{
   height: auto;
 }
 
+table {
+  margin: 0px 20px;
+}
 
 th
 {
-  border: 5px solid white;
+  color: white;
+  font-size: 30px;
+  border-bottom: 5px solid white;
   text-align: center;
-  margin: 20px auto;
 }
 
 td
 {
-  border: 5px solid white;
+  color: white;
+  border-bottom: 1px solid white;
   width: 350px;
   text-align: center;
-  margin: 20px auto;
+  font-size: 25px;
 }
 
 input#user-name, input#pw, input#country{
