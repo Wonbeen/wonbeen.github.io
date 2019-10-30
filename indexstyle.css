@@ -58,7 +58,7 @@ header {
   font-family: 'Righteous', cursive;
   font-size: 100px;
   color: white;
-  opacity: 0.5;
+  opacity: 1;
   text-align: center;
   margin-top: 275px;
   transition-duration: 0.3s;
@@ -66,7 +66,6 @@ header {
 
 .titlephrase h1:hover{
   font-size: 105px;
-  opacity: 1;
   transition-duration: 0.3s;
 }
 
@@ -194,4 +193,14 @@ ul.sub-nav-contents{
 
 .sub-nav:hover ul.sub-nav-contents{
   display: block;
+}
+
+div.media{
+  margin: 15px;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  text-align: center;
 }
