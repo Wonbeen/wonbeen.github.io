@@ -5,9 +5,16 @@
     <link href = "indexstyle.css" type = "text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.png">
+    
+    <!--load the google platform library-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="73644394119-n9ebem567l9prfqktpt0tvrbq7i3e8of.apps.googleusercontent.com">
+    
+
 
   </head>
   <body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <div class="fullscreen-bg">
     <video loop muted autoplay poster = "img/videoframe.jpg" class = "fullscreen-bg__video">
         <source src = "videos/skiddersbackground.mp4" type = "video/mp4">
