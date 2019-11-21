@@ -22,6 +22,15 @@
   </head>
   <body>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+        });
+      }
+    </script>
     <div class="fullscreen-bg">
     <video loop muted autoplay poster = "img/videoframe.jpg" class = "fullscreen-bg__video">
         <source src = "videos/skiddersbackground.mp4" type = "video/mp4">
