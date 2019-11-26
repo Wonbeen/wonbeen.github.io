@@ -200,6 +200,11 @@ div.media{
   text-align: center;
 }
 
+div.content{
+  margin: 15px;
+  text-align: center;
+}
+
 h1{
   color: white;
   text-align: center;
