@@ -5,55 +5,32 @@
     <link href = "indexstyle.css" type = "text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.png">
-     <meta charset="utf-8">
+
     <!--load the google platform library-->
-<script>
-    function checkLoginStatus(){
-      var loginBtn = document.querySelector('#loginBtn');
-      var nameTxt = document.querySelector('#name');
-      if(gauth.isSignedIn.get()){
-        console.log('logined');
-        loginBtn.value = 'Logout';
-        var profile = gauth.currentUser.get().getBasicProfile();
-        nameTxt.innerHTML = 'Welcome <strong>'+profile.getName()+'</strong> ';
-      } else {
-        console.log('logouted');
-        loginBtn.value = 'Login';
-        nameTxt.innerHTML = '';
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
       }
-    }
-    function init(){
-      console.log('init');
-      gapi.load('auth2', function() {
-        console.log('auth2');
-        window.gauth = gapi.auth2.init({
-          client_id:'1069961247398-d5cpi17r74jaad01cf93gbilfnaf3mf4.apps.googleusercontent.com'
-        })
-        gauth.then(function(){
-          console.log('googleAuth success');
-          checkLoginStatus();
-        }, function(){
-          console.log('googleAuth fail');
-        });
-      });
-    }
-  </script>
+    </script>
+    <meta name="google-signin-client_id" content="73644394119-n9ebem567l9prfqktpt0tvrbq7i3e8of.apps.googleusercontent.com">
+
   </head>
   <body>
-     <span id="name"></span><input type="button" id="loginBtn" value="checking..." onclick="
-    if(this.value === 'Login'){
-      gauth.signIn({
-        scope:'https://www.googleapis.com/auth/calendar'
-      }).then(function(){
-        console.log('gauth.signIn()');
-        checkLoginStatus();
-      });
-    } else {
-      gauth.signOut().then(function(){
-        console.log('gauth.signOut()');
-        checkLoginStatus();
-      });
-    }
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+        });
+      }
+    </script>
     <div class="fullscreen-bg">
     <video loop muted autoplay poster = "img/videoframe.jpg" class = "fullscreen-bg__video">
         <source src = "videos/skiddersbackground.mp4" type = "video/mp4">
@@ -143,7 +120,7 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
-         <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
   </body>
 </html>
+
 
