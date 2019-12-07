@@ -63,14 +63,13 @@
         <br>
         <div class = "titlephrase" id = "about-skidders">
           <h1>FAQ</h1>
-          <form class = "question" action = "faq.html" method ="GET">
+          <form class = "question" id = "questionss" action = "faq.html" method ="GET">
             <span>Ask Us Your Question</span>
             <br>
             <br>
-            <textarea id = "question" name = "question" rows ="15" cols= "30" minlength = "3" required>
-            </textarea>
+            <textarea id = "question" name = "question" rows ="15" cols= "30" minlength = "0" required></textarea>
             <br>
-            <input class = "btn" type = "submit" value = "Submit">
+            <input class = "btn" onclick = "displayThanks()" type = "submit" value = "Submit">
           </form>
           <div class = "faq">
             <section>
@@ -107,5 +106,6 @@
           </div>
         </div>
     </header>
+    <script src = "faq.js"></script>
   </body>
 </html>
