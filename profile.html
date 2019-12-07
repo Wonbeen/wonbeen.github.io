@@ -120,21 +120,21 @@
     <!-- End of Sign Up & Sign In Division -->
     <!-- Your Interests Division-->
     <div class = "experience">
-      <form class = "experience" action = "profile.html" method ="GET">
+      <form id = "experience" class = "experience" action = "profile.html" method ="GET">
         <h1>Experience</h1>
-        <input id = "beginner" type = "radio"  name = "answer" value = "beginner" required>
+        <input id = "beginner" type = "radio"  name = "skill" value = "beginner" required>
         <label for = "beginner">Beginner</label>
-        <input id = "intermediate" type = "radio"  name = "answer" value = "intermediate" required>
+        <input id = "intermediate" type = "radio"  name = "skill" value = "intermediate" required>
         <label for = "intermediate">Intermediate</label>
-        <input id = "pro" type = "radio"  name = "answer" value = "pro" required>
+        <input id = "pro" type = "radio"  name = "skill" value = "pro" required>
         <label for = "pro">Professional</label>
         <br>
         <h1>Status Message</h1>
         <label for = "status-message">Status Message: </label>
-        <textarea id = "status-message" name = "status-message" rows ="2" cols= "40" minlength = "3" required>
+        <textarea id = "status-message" name = "status-message" rows ="2" cols= "40" minlength = "0" required>
         </textarea>
         <br>
-        <input class = "btn" type = "submit" value = "Submit">
+        <input class = "btn" onclick = "sub();message()" type = "submit" value = "Submit">
       </form>
     </div>
 
@@ -142,37 +142,38 @@
       <h1>Your Interests</h1>
       <div class = "interests" id = "skateboarding-styles">
         <h2>Skateboarding Style</h2>
-        <form class = "interests" action = "profile.html" method ="GET">
+        <form id = "styleInterest" class = "interests" action = "profile.html" method ="GET">
           <input type="checkbox" name="riding-style" value="freestyle">Freestyle<br>
           <input type="checkbox" name="riding-style" value="vert">Vert Riding<br>
           <input type="checkbox" name="riding-style" value="street">Street skateboarding<br>
           <input type="checkbox" name="riding-style" value="park">Park skateboarding<br>
           <input type="checkbox" name="riding-style" value="cruising">Cruising<br>
           <input type="checkbox" name="riding-style" value="downhill">Downhill skateboarding<br>
-          <input class = "btn" type = "submit" value = "Submit">
+          <input onclick = "sInterest()" class = "btn" type = "submit" value = "Submit">
         </form>
       </div>
       <div class = "interests" id = "location-preference">
         <h2>Location Preference</h2>
-        <form class = "interests" action = "profile.html" method ="GET">
+        <form id = "locationPref" class = "interests" action = "profile.html" method ="GET">
           <input type="checkbox" name="location-preference" value="city">City<br>
           <input type="checkbox" name="location-preference" value="suburban">Suburban<br>
           <input type="checkbox" name="location-preference" value= "skatepark">Skatepark<br>
           <input type="checkbox" name="location-preference" value="mountain-road">Mountain road<br>
-          <input class = "btn" type = "submit" value = "Submit">
+          <input onclick = "locationPref()" class = "btn" type = "submit" value = "Submit">
         </form>
       </div>
       <div class = "interests" id = "persona">
         <h2>Persona</h2>
-        <form class = "interests" action = "profile.html" method ="GET">
+        <form id = "per" class = "interests" action = "profile.html" method ="GET">
           <input type="checkbox" name="persona" value="indie">Indie<br>
           <input type="checkbox" name="persona" value="youtuber-streamer">YouTuber / Streamer<br>
           <input type="checkbox" name="persona" value="crew">Crew<br>
           <input type="checkbox" name="persona" value="team">Team<br>
           <input type="checkbox" name="persona" value="sponsor">Sponsor<br>
-          <input class = "btn" type = "submit" value = "Submit">
+          <input onclick = "personaa()" class = "btn" type = "submit" value = "Submit">
         </form>
       </div>
     </div>
+    <script src = "profile.js"></script>
   </body>
 </html>
